@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>用易语言做一个最简单的WinPE登录程序</title>
+      <link href="/2021/08/26/%E8%AF%AD%E8%A8%80%E5%81%9A%E4%B8%80%E4%B8%AA%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84WinPE%E7%99%BB%E5%BD%95%E7%A8%8B%E5%BA%8F/"/>
+      <url>/2021/08/26/%E8%AF%AD%E8%A8%80%E5%81%9A%E4%B8%80%E4%B8%AA%E6%9C%80%E7%AE%80%E5%8D%95%E7%9A%84WinPE%E7%99%BB%E5%BD%95%E7%A8%8B%E5%BA%8F/</url>
+      
+        <content type="html"><![CDATA[<p>前提是要先把PECMD.INI的内容转移到注册表！</p><h3 id="没有密码的部署程序！"><a href="#没有密码的部署程序！" class="headerlink" title="没有密码的部署程序！"></a>没有密码的部署程序！</h3><p>首先打开易语言先新建一个Windows窗口程序。</p><p>然后新建一个按钮,写上点击进入WinPE,双击按钮然后开始写代码！</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">信息框（“正在进入WinPE”）</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">运行（“X:\Windows\explorer.exe”）</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">运行（X:\你的PENetwork的地址）</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">信息框（“你已成功进入WinPE！”）</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_启动窗口.可视=假</span><br></pre></td></tr></table></figure><p>还有那个启动窗口还可以优化一下哦！按照自己的喜欢来！<br>OK了没有密码就讲完了！<br>到有密码的了！</p><h3 id="有密码的WinPE部署程序！"><a href="#有密码的WinPE部署程序！" class="headerlink" title="有密码的WinPE部署程序！"></a>有密码的WinPE部署程序！</h3><p>还是上面一样只是有一点点改进</p><p>同样先建Windows窗口程序然后添加一个标签写上用户名。</p><p>用户名添加完之后就添加编辑框,千万不要在那个编辑框里写你自己的用户名,不然就没有意义了！</p><p>还是像那个一样添加密码同样不要在那个编辑框里写你自己的密码！<br>然后新建一个按钮写上登录之后再点属性一定要选中编辑框把那个控制按钮改为假！<br>然后双击登录开始写代码！</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如果（编辑框1.内容 = “写你自己想要的用户名”）</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">如果（编辑框1.内容 = “写你自己想要的密码”）</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">_启动窗口.可视=假</span><br></pre></td></tr></table></figure><p>然后就是像上面写的一样了！<br>这样子就完事了！<br>启动窗口建议优化一下不然不好看！<br>记住一定要把PECMD.INI的内容给转移到注册表！不然会不稳定运行着！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 易语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 易语言 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
